@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +13,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
+
 <body>
     <!-- Navbar -->
     <div class="top-navbar">
-        
+
         <button class="toggle-btn" onclick="toggleNav()">
             <i class="fas fa-bars"></i>
         </button>
@@ -37,15 +39,46 @@
     </div>
 
     <div id="main">
+
+        <section class="pt-5 pb-1 mt-0 align-items-center d-flex bg-dark cover-section">
+            <div class="container-fluid">
+                <div class="row  justify-content-center align-items-center d-flex-row text-center h-100">
+                    <div class="col-12 col-md-8  h-50 ">
+                        <div class="icon-wrap text-primary d-flex justify-content-center my-3">
+                            <button href="#"
+                                class="icon d-flex border-0 align-items-center justify-content-center bg-white text-dark  rounded-circle "
+                                style="width:70px; height:70px">
+                                <i class=" fas fa-play fa-lg ml-1"></i>
+                            </button>
+                        </div>
+                        <p class="text-white small text-uppercase mb-1 mt-5" style="letter-spacing: 1em;">Watch video
+                        </p>
+                        <h1 class="   text-white mb-2 mt-2">Cover section with video icon
+                        </h1>
+                        <p></p>
+                        <div class="btn-container-wrapper p-relative d-block  zindex-1">
+                            <a class="btn btn-outline-light border-0 btn-lg pr-2 pl-2 pt-3 pb-3  mt-md-5  scroll align-self-center  "
+                                href="#section-1">
+                                <i class="fa fa-angle-down fa-lg  "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
         <h2>Modern Sidebar with Internal Toggle</h2>
-        <p>The toggle button is  inside the sidebar at the top. Click it to expand or collapse the sidebar.</p>
+        <p>The toggle button is inside the sidebar at the top. Click it to expand or collapse the sidebar.</p>
 
 
 
-            <!-- Footer -->
+        <!-- Footer -->
         <footer class="bg-light text-center py-4 fixed-bottom">
             <p>&copy; 2024 My Website. All Rights Reserved.</p>
-        </footer>   
+        </footer>
     </div>
 
 
@@ -55,4 +88,5 @@
     <script src="js/script.js"></script>
 
 </body>
+
 </html>

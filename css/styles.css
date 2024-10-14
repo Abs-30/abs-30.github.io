@@ -70,7 +70,7 @@ body {
 }
 #main {
     transition: margin-left .3s;
-    padding: 20px;
+    
     margin-left: 250px;
     flex: 1;
 }
@@ -159,7 +159,7 @@ body {
 
     #main {
         margin-left: 0;
-        margin-top: 70px; /* Adjust for the top navbar */
+        
         transition: left 0.3s ease; /* Smooth transition for main content */
     }
 
@@ -197,11 +197,27 @@ body {
     }
 }
 
+.cover-section {
+    min-height: 100vh; 
+    background-size: cover; 
+    background-image: url(https://images.unsplash.com/photo-1517216015940-049a2d4e2da4?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=14035a7d76df29c4697de036fcd005ce);
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+
+
+
 
 
 footer.fixed-bottom {
     
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
