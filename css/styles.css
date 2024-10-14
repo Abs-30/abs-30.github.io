@@ -237,8 +237,45 @@ body {
 }
 
 
+.about-section {
+    min-height: 100vh; 
+    background-size: cover; 
+    background-position: center;
+    position: relative; 
+    overflow: hidden; 
+}
 
+.skills-section {
+    min-height: 100vh; 
+    background-size: cover; 
+    background-position: center;
+    position: relative; 
+    overflow: hidden; 
+}
 
+.experience-section {
+    min-height: 100vh; 
+    background-size: cover; 
+    background-position: center;
+    position: relative; 
+    overflow: hidden; 
+}
+
+.projects-section {
+    min-height: 100vh; 
+    background-size: cover; 
+    background-position: center;
+    position: relative; 
+    overflow: hidden; 
+}
+
+.contact-section {
+    min-height: 100vh; 
+    background-size: cover; 
+    background-position: center;
+    position: relative; 
+    overflow: hidden; 
+}
 
 
 footer.fixed-bottom {
