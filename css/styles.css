@@ -101,12 +101,16 @@ a:hover {
 	bottom: 20px;
 	right: 20px;
 	z-index: 5;
-	background: #5887FF;
+	background: rgba(0, 0, 0, 0.841);
+	backdrop-filter: blur(5px);
+	border-radius: 10px;
+	
 }
 .topHome .fa-2x {
 	font-size: 20px;
 	color: #fff;
-	margin: 4px;
+	margin: 10px;
+	
 }
 h2 {
 	font-size: 40px;
@@ -118,15 +122,17 @@ h2 {
 ----------------------------------------------*/
 .header {
 	position: fixed;
-	width: 100%;
-	background: transpreant;
+	width: auto;
+	background: rgba(29, 23, 53, 0.608);
+	backdrop-filter: blur(5px);
 	z-index: 50;
-	border-radius: 0;
-	top: 0px;
+	border-radius: 10px;
+	margin: 10px;
 }
 .navbar-inverse .navbar-toggle {
 	border-color: #5887FF;
 	background-color: #5887FF;
+	
 }
 .header .navbar {
 	margin: 0;
@@ -157,10 +163,11 @@ h2 {
 .navbar-toggle {
 }
 .addBg {
-background: #000 !important;
--webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
--moz-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
+	background: rgba(0, 0, 0, 0.797);
+	backdrop-filter: blur(5px);
+border-radius: 10px;
+margin: 10px;
+
 }
 /*.carousel-inner*/
 #myCarousel {
@@ -242,8 +249,8 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
 	color: #fff;
 	background: none;
-	border-bottom:2px solid #5887FF;
-	border-radius: 0px;
+	border:2px solid #ffff58;
+	border-radius: 5px;
 }
 .navbar-nav > li:hover > a {
 	color: #fff;
