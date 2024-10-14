@@ -120,6 +120,10 @@ h2 {
 }
 /* Header 
 ----------------------------------------------*/
+
+
+
+
 .header {
 	position: fixed;
 	width: auto;
@@ -130,10 +134,15 @@ h2 {
 	margin: 10px;
 }
 .navbar-inverse .navbar-toggle {
-	border-color: #5887FF;
-	background-color: #5887FF;
+	background: rgba(0, 0, 0, 0.727);
+	backdrop-filter: blur(5px);
+	border-radius: 10px;
+	padding: 20px;
 	
 }
+
+
+
 .header .navbar {
 	margin: 0;
 	background: transparent !important;
@@ -142,7 +151,7 @@ h2 {
 /*background-color: #5887FF;*/;
 }
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-	background: #5887FF;
+	background: #3300ff;
 }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
 	color: #fff;
@@ -157,7 +166,7 @@ h2 {
 	color: #FFFFFF;
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-	color: #5887FF;
+	color:#3300ff;
 	background: none;
 }
 .navbar-toggle {
@@ -165,8 +174,8 @@ h2 {
 .addBg {
 	background: rgba(0, 0, 0, 0.797);
 	backdrop-filter: blur(5px);
-border-radius: 10px;
-margin: 10px;
+	border-radius: 10px;
+	margin: 10px;
 
 }
 /*.carousel-inner*/
