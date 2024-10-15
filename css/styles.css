@@ -99,6 +99,16 @@ body {
     display: none; 
 }
 
+.top-socials {
+    display: none;
+}
+
+.social-links{
+    position: absolute;
+    bottom: 0;
+    
+}
+
 @media screen and (max-width: 768px) {
     .sidebar {
         width: 70px;
@@ -152,49 +162,83 @@ body {
         justify-content: center; /* Center the pills in the bottom bar */
         align-items: center;
         background-color: white;
-        padding: 10px; /* Reduced padding to save space */
+        padding: 10px;
         position: fixed;
         bottom: 0;
         left: 0;
         width: 100%;
         z-index: 10;
+        height: auto; /* Ensure proper height */
+        flex-wrap: nowrap; /* Prevent wrapping */
     }
-
+    
     .bottom-navbar .nav-item {
-        flex: 1; /* Make each nav item take equal width */
+        flex: 1;
         text-align: center;
-        margin: 0 0px; /* Reduce space between nav items */
+        margin: 0;
     }
-
+    
     .bottom-navbar .nav-link {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-
-
+    
     .bottom-navbar .nav-link small {
         font-size: 8px;
         margin-top: 2px;
     }
-
+    
     .bottom-navbar .nav-link.active {
         background-color: var(--primary-color);
         color: white;
         border-radius: 15px;
     }
-
-    .bottom-navbar .nav-link  {
+    
+    .bottom-navbar .nav-link {
         color: #333;
     }
-
+    
     .bottom-navbar .nav-link:hover {
-        color:var(--primary-color);
+        color: var(--primary-color);
     }
+    
     .bottom-navbar .nav-link.active:hover {
         color: #ffffff;
     }
+    
+    .top-socials {
+        display: flex;
+        justify-content: center; /* Center the pills in the bottom bar */
+        align-items: center;
+        background-color: transparent;
+        position: absolute; /* Change to fixed to make it float at the top */
+        top: 30px; /* Position it at the top of the viewport */
+        left: 0px; /* Align it to the left side */
+        right: 0px; /* Align it to the right side */
+        margin: 0; /* Remove margin for a flush fit at the top */
+        width: 100%; /* Ensure full width */
+        z-index: 10; /* Keep it on top of other content */
+        height: auto; /* Ensure proper height */
+        flex-wrap: nowrap; /* Prevent wrapping */
+    }
+
+    .top-socials .nav-link{
+        color: white;
+        font-size: 20px;
+        transition: .3s;
+    }
+    .top-socials .nav-link:hover{
+        color: var(--primary-color);
+        font-size: 22px;
+    }
+    .top-socials .nav {
+        background-color: #333333aa;
+        backdrop-filter: blur(5px);
+        padding: 10px;
+        border-radius: 10px;
+    }
+
 
 }
 
