@@ -34,3 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     sections.forEach(section => observer.observe(section));
   });
+
+
+  

@@ -5,6 +5,8 @@
     --sidebar-bg: #ffffff;
     --sidebar-hover: #e6f0ff;
 }
+
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -70,9 +72,9 @@ body {
 }
 #main {
     transition: margin-left .3s;
-    
     margin-left: 250px;
     flex: 1;
+    
 }
 
 #main-content {
@@ -338,6 +340,8 @@ body {
 
 .project-card {
     border-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     border: 5px;
 }
 
@@ -352,6 +356,10 @@ body {
     background-color: brown;
 }
 
+.project-image{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
 
 footer.fixed-bottom {
     
