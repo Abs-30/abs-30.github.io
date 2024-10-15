@@ -95,10 +95,9 @@ body {
     margin-left: 70px;
 }
 
-.top-navbar {
-    display: none; /* Hidden by default */
+.bottom-navbar {
+    display: none; 
 }
-
 
 @media screen and (max-width: 768px) {
     .sidebar {
@@ -135,66 +134,70 @@ body {
 }
 
 
-
 @media screen and (max-width: 768px) {
     .sidebar {
-        width: 250px;
-        position: fixed;
-        left: -250px; 
-        transition: left 0.3s ease, opacity 0.3s ease; 
-        opacity: 0; 
-        z-index: 100;
+        display: none;
+        margin: 0;
     }
 
 
-    .sidebar.open {
-        left: 0; 
-        opacity: 1; 
-    }
-
-    
-    .sidebar.closed {
-        left: -250px; 
-        opacity: 0; 
-    }
 
     #main {
         margin-left: 0;
         transition: left 0.3s ease;
     }
 
-    .top-navbar {
+    .bottom-navbar {
         display: flex;
+        justify-content: center; /* Center the pills in the bottom bar */
         align-items: center;
         background-color: white;
-        padding: 15px;
+        padding: 10px; /* Reduced padding to save space */
         position: fixed;
-        top: 0;
+        bottom: 0;
         left: 0;
         width: 100%;
         z-index: 10;
     }
 
-    .top-navbar h3 {
-        margin: 0;
-        color: var(--primary-color);
+    .bottom-navbar .nav-item {
+        flex: 1; /* Make each nav item take equal width */
+        text-align: center;
+        margin: 0 0px; /* Reduce space between nav items */
     }
 
-    .top-navbar .toggle-btn {
-        font-size: 20px;
-        margin-right: auto;
+    .bottom-navbar .nav-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    
-    .sidebar.open ~ #main {
-        margin-left: 0; 
+
+
+    .bottom-navbar .nav-link small {
+        font-size: 8px;
+        margin-top: 2px;
     }
 
-    
-    .sidebar.closed ~ #main {
-        margin-left: 0; /
+    .bottom-navbar .nav-link.active {
+        background-color: var(--primary-color);
+        color: white;
+        border-radius: 15px;
     }
+
+    .bottom-navbar .nav-link  {
+        color: #333;
+    }
+
+    .bottom-navbar .nav-link:hover {
+        color:var(--primary-color);
+    }
+    .bottom-navbar .nav-link.active:hover {
+        color: #ffffff;
+    }
+
 }
+
 
 .cover-section {
     min-height: 100vh; 
