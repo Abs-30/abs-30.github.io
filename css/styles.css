@@ -1,7 +1,8 @@
 :root {
     --primary-color: #2d9d33;
-    
+
     --bg-color: #f4f7fa;
+    --bg-color2:#e0e0e0;
     --second-color: #333;
     --sidebar-bg: #ffffff;
     --sidebar-hover: #e6f0ff;
@@ -89,7 +90,7 @@ body {
 
 #main-content {
     min-height: 100vh;
-    
+
     display: flex;
     flex-direction: column;
 
@@ -235,27 +236,27 @@ body {
     .top-socials {
         display: flex;
         justify-content: center;
-        /* Center the pills in the bottom bar */
+        
         align-items: center;
         background-color: transparent;
         position: absolute;
-        /* Change to fixed to make it float at the top */
+        
         top: 30px;
-        /* Position it at the top of the viewport */
+        
         left: 0px;
-        /* Align it to the left side */
+        
         right: 0px;
-        /* Align it to the right side */
+        
         margin: 0;
-        /* Remove margin for a flush fit at the top */
+        
         width: 100%;
-        /* Ensure full width */
+        
         z-index: 10;
-        /* Keep it on top of other content */
+        
         height: auto;
-        /* Ensure proper height */
+        
         flex-wrap: nowrap;
-        /* Prevent wrapping */
+        
     }
 
     .top-socials .nav-link {
@@ -364,29 +365,23 @@ body {
 
 
 
-.btn-project {
-    background-color: var(--primary-color);
-    border: 1px;
-    border-radius: 20px;
-}
-
-.btn-project:hover {
-    background-color: brown;
-}
 
 .project-card {
-    border-radius: 10px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border: 5px;
+    background-color: var(--bg-color);
 }
 
+.project-card-footer {
+    background-color: var(--bg-color);
+}
+
+
 .btn-project-1 {
-    background-color: var(--primary-color);
+    background-color: var(--bg-color2);
     border: 1px;
     font-size: 1.1em;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
+    color: var(--second-color);
 }
 
 .btn-project-1:hover {
@@ -411,9 +406,6 @@ body {
     min-height: 100%;
     object-fit: cover;
 }
-
-
-
 
 
 
