@@ -1,5 +1,6 @@
 :root {
     --primary-color: #2d9d33;
+    
     --bg-color: #f4f7fa;
     --second-color: #333;
     --sidebar-bg: #ffffff;
@@ -15,6 +16,7 @@ body {
     color: var(--second-color);
     height: 100%;
 }
+
 .sidebar {
     height: 100%;
     width: 250px;
@@ -25,23 +27,26 @@ body {
     background-color: var(--sidebar-bg);
     overflow-x: hidden;
     transition: 0.3s;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     white-space: nowrap;
-    
+
 }
+
 .sidebar-header {
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #e0e0e0;
-    
+
 }
+
 .sidebar-header h3 {
     margin: 0;
     font-size: 1.2em;
     color: var(--primary-color);
 }
+
 .toggle-btn {
     background: none;
     border: none;
@@ -50,9 +55,11 @@ body {
     cursor: pointer;
     transition: 0.2s;
 }
+
 .toggle-btn:hover {
     color: var(--primary-color);
 }
+
 .sidebar a {
     padding: 15px 25px;
     text-decoration: none;
@@ -62,86 +69,99 @@ body {
     align-items: center;
     transition: 0.2s;
 }
+
 .sidebar a:hover {
     background-color: var(--sidebar-hover);
     color: var(--primary-color);
 }
+
 .sidebar a i {
     min-width: 30px;
     font-size: 20px;
 }
+
 #main {
     transition: margin-left .3s;
     margin-left: 250px;
     flex: 1;
-    
+
 }
 
 #main-content {
-    min-height: 100vh; /* Make sure it takes up the full height of the viewport */
+    min-height: 100vh;
+    /* Make sure it takes up the full height of the viewport */
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .sidebar.closed {
     width: 70px;
 }
+
 .sidebar.closed .sidebar-header h3 {
     display: none;
 }
+
 .sidebar.closed a span {
     display: none;
 }
-.sidebar.closed ~ #main {
+
+.sidebar.closed~#main {
     margin-left: 70px;
 }
 
 .bottom-navbar {
-    display: none; 
+    display: none;
 }
 
 .top-socials {
     display: none;
 }
 
-.social-links{
+.social-links {
     position: absolute;
     bottom: 0;
-    
+
 }
 
 @media screen and (max-width: 768px) {
     .sidebar {
         width: 70px;
-        
+
     }
+
     .sidebar .sidebar-header h3 {
         display: none;
-        
+
     }
+
     .sidebar a span {
         display: none;
     }
 
     .sidebar.open {
         width: 250px;
-        
+
     }
+
     .sidebar.open .sidebar-header h3 {
         display: block;
     }
+
     .sidebar.open a span {
         display: inline;
         transition: 0.3s ease;
     }
-    .sidebar.open ~ #main {
+
+    .sidebar.open~#main {
         margin-left: 250px;
-        
+
     }
-    .sidebar.closed ~ #main {
+
+    .sidebar.closed~#main {
         margin-left: 0px;
-        
+
     }
 }
 
@@ -161,7 +181,8 @@ body {
 
     .bottom-navbar {
         display: flex;
-        justify-content: center; /* Center the pills in the bottom bar */
+        justify-content: center;
+        /* Center the pills in the bottom bar */
         align-items: center;
         background-color: white;
         padding: 10px;
@@ -170,70 +191,84 @@ body {
         left: 0;
         width: 100%;
         z-index: 10;
-        height: auto; /* Ensure proper height */
-        flex-wrap: nowrap; /* Prevent wrapping */
+        height: auto;
+        /* Ensure proper height */
+        flex-wrap: nowrap;
+        /* Prevent wrapping */
     }
-    
+
     .bottom-navbar .nav-item {
         flex: 1;
         text-align: center;
         margin: 0;
     }
-    
+
     .bottom-navbar .nav-link {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .bottom-navbar .nav-link small {
         font-size: 8px;
         margin-top: 2px;
     }
-    
+
     .bottom-navbar .nav-link.active {
         background-color: var(--primary-color);
         color: white;
         border-radius: 15px;
     }
-    
+
     .bottom-navbar .nav-link {
         color: #333;
     }
-    
+
     .bottom-navbar .nav-link:hover {
         color: var(--primary-color);
     }
-    
+
     .bottom-navbar .nav-link.active:hover {
         color: #ffffff;
     }
-    
+
     .top-socials {
         display: flex;
-        justify-content: center; /* Center the pills in the bottom bar */
+        justify-content: center;
+        /* Center the pills in the bottom bar */
         align-items: center;
         background-color: transparent;
-        position: absolute; /* Change to fixed to make it float at the top */
-        top: 30px; /* Position it at the top of the viewport */
-        left: 0px; /* Align it to the left side */
-        right: 0px; /* Align it to the right side */
-        margin: 0; /* Remove margin for a flush fit at the top */
-        width: 100%; /* Ensure full width */
-        z-index: 10; /* Keep it on top of other content */
-        height: auto; /* Ensure proper height */
-        flex-wrap: nowrap; /* Prevent wrapping */
+        position: absolute;
+        /* Change to fixed to make it float at the top */
+        top: 30px;
+        /* Position it at the top of the viewport */
+        left: 0px;
+        /* Align it to the left side */
+        right: 0px;
+        /* Align it to the right side */
+        margin: 0;
+        /* Remove margin for a flush fit at the top */
+        width: 100%;
+        /* Ensure full width */
+        z-index: 10;
+        /* Keep it on top of other content */
+        height: auto;
+        /* Ensure proper height */
+        flex-wrap: nowrap;
+        /* Prevent wrapping */
     }
 
-    .top-socials .nav-link{
+    .top-socials .nav-link {
         color: white;
         font-size: 20px;
         transition: .3s;
     }
-    .top-socials .nav-link:hover{
+
+    .top-socials .nav-link:hover {
         color: var(--primary-color);
         font-size: 22px;
     }
+
     .top-socials .nav {
         background-color: #333333aa;
         backdrop-filter: blur(5px);
@@ -246,34 +281,34 @@ body {
 
 
 .cover-section {
-    min-height: 100vh; 
-    background-size: cover; 
+    min-height: 100vh;
+    background-size: cover;
     background-position: center;
-    background-image: url(../assets/img/Norochcholai_CEB_training_1.jpg); 
-    position: relative; 
-    overflow: hidden; 
+    background-image: url(../assets/img/Norochcholai_CEB_training_1.jpg);
+    position: relative;
+    overflow: hidden;
 }
 
 .cover-section::before {
-    content: ""; 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 0; 
-    background-color: rgba(0, 0, 0, 0.607); 
-    z-index: 1; 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.607);
+    z-index: 1;
 }
 
 .cover-section .container-fluid {
     position: relative;
-    z-index: 2; 
-    color: #fff; 
+    z-index: 2;
+    color: #fff;
 }
 
 .cover-section .btn-container-wrapper {
-    position: relative; 
-    z-index: 2; 
+    position: relative;
+    z-index: 2;
 }
 
 
@@ -281,60 +316,61 @@ body {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #333;
-  text-shadow: none; 
+    color: #333;
+    text-shadow: none;
 }
 
 
 .about-section {
-    min-height: 100vh; 
-    background-size: cover; 
+    min-height: 100vh;
+    background-size: cover;
     background-position: center;
-    position: relative; 
-    overflow: hidden; 
+    position: relative;
+    overflow: hidden;
 }
 
 .skills-section {
-    min-height: 100vh; 
-    background-size: cover; 
+    min-height: 100vh;
+    background-size: cover;
     background-position: center;
-    position: relative; 
-    overflow: hidden; 
+    position: relative;
+    overflow: hidden;
 }
 
 .experience-section {
-    min-height: 100vh; 
-    background-size: cover; 
+    min-height: 100vh;
+    background-size: cover;
     background-position: center;
-    position: relative; 
-    overflow: hidden; 
+    position: relative;
+    overflow: hidden;
 }
 
 .projects-section {
-    min-height: 100vh; 
-    background-size: cover; 
+    min-height: 100vh;
+    background-size: cover;
     background-position: center;
-    position: relative; 
-    overflow: hidden; 
+    position: relative;
+    overflow: hidden;
 }
 
 .contact-section {
-    min-height: 100vh; 
-    background-size: cover; 
+    min-height: 100vh;
+    background-size: cover;
     background-position: center;
-    position: relative; 
-    overflow: hidden; 
+    position: relative;
+    overflow: hidden;
 }
 
 
 
 
-.btn-project{
+.btn-project {
     background-color: var(--primary-color);
     border: 1px;
     border-radius: 20px;
 }
-.btn-project:hover{
+
+.btn-project:hover {
     background-color: brown;
 }
 
@@ -345,20 +381,35 @@ body {
     border: 5px;
 }
 
-.btn-project-1{
+.btn-project-1 {
     background-color: var(--primary-color);
     border: 1px;
     font-size: 1.1em;
     padding: 20px;
     border-radius: 10px;
 }
-.btn-project-1:hover{
+
+.btn-project-1:hover {
     background-color: brown;
 }
 
-.project-image{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.project-image {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
 }
 
 
@@ -368,7 +419,7 @@ body {
 
 
 footer.fixed-bottom {
-    
+
     position: relative;
     bottom: 0;
     left: 0;
