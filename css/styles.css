@@ -2,7 +2,7 @@
     --primary-color: #2d9d33;
 
     --bg-color: #f4f7fa;
-    --bg-color2:#e0e0e0;
+    --bg-color2: #e0e0e0;
     --second-color: #333;
     --sidebar-bg: #ffffff;
     --sidebar-hover: #e6f0ff;
@@ -236,27 +236,27 @@ body {
     .top-socials {
         display: flex;
         justify-content: center;
-        
+
         align-items: center;
         background-color: transparent;
         position: absolute;
-        
+
         top: 30px;
-        
+
         left: 0px;
-        
+
         right: 0px;
-        
+
         margin: 0;
-        
+
         width: 100%;
-        
+
         z-index: 10;
-        
+
         height: auto;
-        
+
         flex-wrap: nowrap;
-        
+
     }
 
     .top-socials .nav-link {
@@ -366,6 +366,12 @@ body {
 
 
 
+.skill-card {
+    background-color: var(--bg-color);
+}
+
+
+
 .project-card {
     background-color: var(--bg-color);
 }
@@ -407,7 +413,9 @@ body {
     object-fit: cover;
 }
 
-
+.contact-card {
+    background-color: var(--bg-color);
+}
 
 
 footer.fixed-bottom {
