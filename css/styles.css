@@ -220,6 +220,10 @@ body {
         color: white;
         border-radius: 15px;
     }
+    .bottom-navbar .nav-link.active small {
+        font-weight: 700;
+    }
+
 
     .bottom-navbar .nav-link {
         color: #333;
