@@ -376,7 +376,9 @@ body {
     background-color: var(--bg-color);
 }
 
-
+.skill-icon {
+    font-size: 2rem;
+}
 
 .project-card {
     background-color: var(--bg-color);
