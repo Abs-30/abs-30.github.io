@@ -1,3 +1,6 @@
+
+
+
 function toggleNav() {
     const sidebar = document.getElementById("mySidebar");
     const main = document.getElementById("main");
@@ -38,4 +41,4 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
-  
+
