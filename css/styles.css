@@ -477,6 +477,7 @@ body {
     padding-bottom: 15px; /* Ensure space for description */
     border-radius: 0.4rem;
     height: 240px;
+    
 }
 .card-project-1 img {
     height: 250px;
@@ -484,6 +485,7 @@ body {
     border-radius: 0.4rem;
     filter: brightness(0.85);
     transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
+    
 }
 
 .card-project-1:hover img {
