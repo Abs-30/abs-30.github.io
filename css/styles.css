@@ -391,12 +391,15 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: flex 0.3s ease;
+    
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    filter: brightness(0.7);
+    transition: flex 0.3s ease-in-out, filter 0.4s ease-in-out;
     position: relative; /* Added to position absolute child inside the card */
+    
 }
 
 .card-horizontal-1 img {
@@ -404,6 +407,8 @@ body {
     height: 450px;
     object-fit: cover;
     display: block;
+    
+    
 }
 
 
@@ -411,26 +416,30 @@ body {
 .card-horizontal-1:hover {
     flex: 2;
     transition: flex 0.3s ease;
+    filter: brightness(0.9);
 }
+
 
 .horizontal-card-stack .card-horizontal-1:not(:hover) {
     flex: 1;
+    transition: flex 0.3s ease;
 }
 
 /* Overlay text styling */
 .overlay-exp {
     position: absolute;
-    
-    left: 0%;
+    bottom: 4%;
+    left: 10%;
     color: rgb(255, 255, 255);
     font-size: 36px;
     font-weight: bold;
-    
+    line-height: 0.8;
     z-index: 2;
     text-transform: uppercase;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    
+    text-align: right;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 
