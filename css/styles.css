@@ -382,23 +382,32 @@ body {
     display: flex;
     overflow: hidden;
     width: 90%;
+    
     gap: 10px;
+    
 }
 
 .card-horizontal-1 {
     flex: 1;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
     overflow: hidden;
     
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    filter: brightness(0.7);
-    transition: flex 0.3s ease-in-out, filter 0.4s ease-in-out;
+    
+    transition: flex 0.3s ease-in-out;
     position: relative; /* Added to position absolute child inside the card */
+    
+}
+.card-horizontal-2 {
+
+    filter: brightness(0.7);
+    transition: filter 0.4s ease-in-out;
+    
     
 }
 
@@ -416,9 +425,12 @@ body {
 .card-horizontal-1:hover {
     flex: 2;
     transition: flex 0.3s ease;
-    filter: brightness(0.9);
+    
 }
-
+.card-horizontal-2:hover {
+    filter: brightness(0.9);
+    
+}
 
 .horizontal-card-stack .card-horizontal-1:not(:hover) {
     flex: 1;
